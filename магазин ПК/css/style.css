@@ -1,0 +1,255 @@
+body {
+	background: url(jpg/2924a1e5d72e50d75219a3f54fb5621572df1a97.jpg) no-repeat;
+	background-attachment: fixed; /* Фон страницы фиксируется */
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+	-o-background-size: cover; /* Opera 9.6+ */
+	background-size: cover; /* Современные браузеры */
+	background-position: 50% 50%;
+
+	color: #C5C6C7;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: Arial, sans-serif;
+}
+
+.header {
+	height: 100px;
+	/* background: url(jpg/eb9a9f3e5f9201eb88db1c347ab7b87e24ce03b2r1-500-500_hq.gif); */
+	background-attachment: fixed; /* Фон страницы фиксируется */
+	background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+	background-size: 20%; /* Современные браузеры */
+}
+.content {
+	margin-left: 25%;
+	padding-left: 10px;
+	padding-right: 10px;
+    width: 50%;
+}
+.sidebar {
+    width: 15%;
+    float: left;
+    padding-right: 10px;
+}
+
+a>.header-img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-left: 1em;
+	width: 150px;
+	height: 100px;
+	border-radius: 50% 50%;
+}
+
+/* кнопки аутентификации */
+div>.link, div>button {
+	position: relative;
+	left: -0.25em;
+}
+
+.complete {
+	margin-right: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+	color: lime;
+}
+
+/* ошибка */
+.error {
+	position: absolute;
+	left: 2em;
+	width: 1000em;
+	color: red;
+}
+
+/* Меню */
+svg {
+	position: fixed;
+	top: 6.9em;
+	left: 3.9em;
+	z-index: 1;
+}
+section.menu {
+	position: fixed;
+	margin-left: 3.7em;
+	top: 6.9em;
+	opacity: 0;
+	z-index: 2;
+}
+select.menu, select.menu>option {
+	background-color: Thistle;
+	position: absolute;
+	border: 5px solid #45A29E;
+	border-radius: 50%;
+	color: black;
+	width: 7em;
+	height: 7em;
+}
+
+/* сортировка */
+.sort {
+	width: 200px;
+	background: white;
+	border: 5px inset white;
+}
+
+/* категория в регистрации пк */
+.PC_form_category {
+	background-color: transparent;
+	color:#fff;
+	border: 2px solid #66FCF1;
+	width: 12.7em;
+	height: 2em;
+}
+.PC_form_category>option {
+	background-color: thistle;
+	color: black;
+}
+.PC_form_category:focus {
+	border: 5px solid #66FCF1;
+}
+
+
+/* Аутификация, поиск*/
+
+/* убирает лини при фокусе input */
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.block {
+	background-color: transparent;
+	position: absolute;
+	margin-top: -6em;
+	right: 5px;
+}
+.search_block {
+	padding-top: 1em; 
+	height: 100px;
+}
+input {
+	background-color: transparent;
+	color:#fff;
+	border: 2px solid #66FCF1;
+	height: 2em;
+}
+input:focus {
+	border: 5px solid #66FCF1;
+}
+.button_search {
+	position: relative;
+	top: 0em;
+	left: 0em;
+	/* display: none; */
+}
+
+/* Button */
+button {
+	text-decoration: none; /* отключает анимацию по умолчанию */
+	outline: none;
+	display: inline-block;
+	color: white;
+	padding: 2px 8px;
+	margin: 5px 10px;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image: linear-gradient(to right, #66FCF1 0%, #1F2833 51%, #66FCF1 100%);
+	background-size: 200% auto;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	transition: .9s;
+  }
+button:hover {
+	background-position: right center;
+}
+
+/* Ссылки */
+
+a.link, a.registration {
+	text-decoration: none; /* отключает анимацию по умолчанию */
+	outline: none;
+	display: inline-block;
+	color: white;
+	padding: 2px 28px;
+	margin: 5px 10px;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image: linear-gradient(to right, #66FCF1 0%, #1F2833 51%, #66FCF1 100%);
+	background-size: 200% auto;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	transition: 0.9s;
+  }
+a.registration {
+	margin: 5px 8px;
+}  
+a.link:hover {
+	text-decoration: none;
+	color: white;
+	background-position: right center;
+}
+
+/* кнопка с категорией #0C0032 – #190061 – #240090 – #3500D3*/
+.category {
+	background-image: linear-gradient(to right, #66FCF1 0%, #1F2833 51%, #66FCF1 100%);
+	width: 10em;
+	height: 4em;
+	color: white;
+}
+
+.block_category {
+	position: fixed;
+	margin-top: 8em;
+	margin-left: 2em;
+}
+
+.footer {
+	position: absolute;
+	left: 10px;
+	bottom: 0px;
+	width: 10%;
+}
+.svg_size {
+	width: 110px;
+	height: 110px;
+}
+
+.PC {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+@media screen and (max-width: 854px) {
+	.header {font-size: 0.9em;}
+	.error {font-size: 0.9em;}
+}
+@media screen and (max-width: 768px) {
+	.category {font-size: 0.6em; top: -40px;}
+	.block {right: 0px; top: 75px;}
+	.header {font-size: 0.7em;}
+	.svg_size {width: 80px; left: 45px; top: 40px;}
+	select.menu {width: 4.7em; height: 4.7em; margin-left: -0.8em; top: -3.3em;}
+	a.registration {width: 13.3em;}
+	a>.header-img {width: 75px; height: 50px;}
+	.header {height: 50px;}
+	.complete{font-size: 15px;}
+}
+@media screen and (max-width: 640px) {
+	.category {font-size: 0.6em; margin-left: -10px; top: -60px;}
+	.block {font-size: 0.6em; top: 45px;}
+	.svg_size {width: 60px; left: 35px; top: 30px;}
+	select.menu {width: 3.5em; height: 3.5em; margin-left: -1.4em; top: -3.4em;}
+	a.registration {padding-left: 13%; width: 16em;}
+	.name1, .password1 {position: relative; left: 1em; width: 16em; height: 3em;}
+	.search, .button_search {font-size: 0.6em;}
+	.search {height: 3em;}
+	a>.header-img {width: 75px; height: 50px;}
+	.header {height: 50px;}
+	.complete{font-size: 10px;}
+}

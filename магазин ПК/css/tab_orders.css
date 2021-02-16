@@ -1,0 +1,59 @@
+body {
+    background: url(jpg/Оригинал_1920x1200.jpg);
+	background-attachment: fixed; /* Фон страницы фиксируется */
+	background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+input, input:hover, input:focus {
+	border: 1px inset silver;
+}
+.search, .search:hover {
+	background-color: transparent;
+	color:#fff;
+	border: 2px solid #66FCF1;
+	height: 2em;
+}
+.search:focus {
+	border: 5px solid #66FCF1;
+}
+
+table {
+    table-layout:fixed; 
+    width: 100%;
+}
+.hov:hover {
+	color: lime;
+}
+table td {
+	overflow:hidden;
+}
+table td:nth-of-type(1) {
+	width: 5%;
+}
+table td:nth-of-type(2) {
+	width: 20%;
+}
+table td:nth-of-type(3) {
+	width: 35%;
+}
+table td:nth-of-type(4) {
+	width: 17%;
+}
+table td:nth-of-type(5) {
+	width: 17%;
+}
+table td:nth-of-type(6) {
+	width: 6%;
+}
+
+@media screen and (max-width: 1200px) {
+	tr, td {display:block;}
+	table td:nth-of-type(1), table td:nth-of-type(2), table td:nth-of-type(3), table td:nth-of-type(4),
+	table td:nth-of-type(5), table td:nth-of-type(6)
+	{width: 100%;}
+	body {background-size: 200%;}
+}

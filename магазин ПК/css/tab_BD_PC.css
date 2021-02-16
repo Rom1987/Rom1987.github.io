@@ -1,0 +1,93 @@
+body {
+    background: url(jpg/Оригинал_1920x1200.jpg);
+	background-attachment: fixed; /* Фон страницы фиксируется */
+	background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+
+textarea {
+	background-color: transparent; 
+	color: white;  
+}
+textarea:focus, input:focus {
+	color: lime;
+}
+input, input:hover, input:focus {
+	border: 1px inset silver;
+}
+.search, .search:hover {
+	background-color: transparent;
+	color:#fff;
+	border: 2px solid #66FCF1;
+	height: 2em;
+}
+.search:focus {
+	border: 5px solid #66FCF1;
+}
+.textarea_Characteristic {
+	width: 100%;
+	height: 200px;
+}
+.Category {
+	color: #C5C6C7;
+	background: transparent;
+	border: 1px inset #C5C6C7;
+}
+.Category:hover {
+	color: lime;
+} 
+.Category>option {
+	background: black;
+}
+
+.textarea_Price, .textarea_Quantity {
+	width: 100%;
+}
+
+table {
+    table-layout:fixed; 
+    width: 100%;
+}
+.hov:hover {
+	color: lime;
+}
+table td {
+	overflow:hidden;
+}
+table td:nth-of-type(1) {
+	width: 5%;
+}
+table td:nth-of-type(2) {
+	width: 20%;
+}
+table td:nth-of-type(3) {
+	width: 35%;
+}
+table td:nth-of-type(4) {
+	width: 16%;
+}
+table td:nth-of-type(5) {
+	width: 10%;
+}
+table td:nth-of-type(6) {
+	width: 6%;
+}
+table td:nth-of-type(7) {
+	width: 6%;
+}
+table td:nth-of-type(8) {
+	width: 2%;
+}
+@media screen and (max-width: 1200px) {
+	tr, td {display:block;}
+	table td:nth-of-type(1), table td:nth-of-type(2), table td:nth-of-type(3), table td:nth-of-type(4),
+	table td:nth-of-type(5), table td:nth-of-type(6), table td:nth-of-type(7), table td:nth-of-type(8)
+	{width: 100%;}
+	.textarea_Characteristic, .textarea_IMG {width: 100%;}
+	.textarea_Characteristic {height: 200px;}
+	body {background-size: 200%;}
+}

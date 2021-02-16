@@ -1,0 +1,32 @@
+CREATE TABLE Accounts
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+Nickname text NOT NULL,
+Password text NOT NULL
+);
+CREATE TABLE Users
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+L_F_S text NOT NULL,
+Address text NOT NULL,
+Date_of_Birth date NOT NULL,
+Phone varchar(11) NOT NULL,
+User_code int(255) NOT NULL,
+FOREIGN KEY (User_code) REFERENCES Accounts (ID)
+);
+CREATE TABLE PC
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+PC_name text NOT NULL,
+Characteristic text NOT NULL,
+Category varchar(30) NOT NULL,
+IMG text NOT NULL,
+Price int(255) NOT NULL,
+Quantity int(255) NOT NULL
+);
+CREATE TABLE Orders
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+PC_code int(255) NOT NULL,
+User_code int(255) NOT NULL,
+Purchase_date date NOT NULL,
+Delivery_date date NOT NULL,
+FOREIGN KEY (PC_code) REFERENCES PC (ID),
+FOREIGN KEY (User_code) REFERENCES Users (ID)
+);
